@@ -1,0 +1,709 @@
+
+
+
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-color: #D6DAD0
+}
+
+/*propiedades padre (grid layout)*/
+.contenedor {
+
+  display: grid;
+  grid-template-areas: "header header"
+                        "nav nav"
+                        "main main"
+                        "footer footer";
+  justify-content: center;
+  
+
+}
+
+header{
+  grid-area: header;
+justify-content: center;
+  
+ 
+}
+
+header h1{
+  text-align: center;
+
+  background-color: rgb(65, 65, 65);
+  color: white;
+}
+
+
+
+header img{
+  width: 10%;
+  justify-content: center;
+
+
+
+
+
+
+  
+}
+
+
+
+nav{
+  grid-area: nav;
+}
+
+
+/*Inicio estilos del menu*/
+nav ul{
+  align-content: center   ;
+  justify-content: center;
+  display: flex;
+  list-style-position: center;  
+  list-style: none;
+  background-color: rgb(25, 59, 78);
+  padding: 5PX 5Px;
+  
+}
+
+nav ul li a{
+  
+  text-decoration: none;
+  color: white;
+  margin: 10px;
+}
+
+/*Fin estilos del menu*/
+
+
+main{
+  grid-area: main;
+  
+}
+
+/*Inicio estilo del divMain*/
+
+.divMain{
+  
+
+  display: flex;
+  align-items: center;
+  background-color: rgb(116, 132, 180);
+  
+  width: 300 px ;
+  height: 500px;
+  color: black;
+  border-color: black;
+  margin: 0;
+  margin-bottom: 100px;
+  margin-top: 100px;
+  padding: 0px 90px;
+  border-radius: 50px;
+
+}
+
+
+
+main div section{
+  background-color: rgb(182, 182, 182);
+  padding: 40px;
+  margin: 40px;
+  border-radius: 50px;
+}
+
+main div ul{
+padding: 10px 40px;
+}
+
+/*Final estilo del divMain*/
+
+/*Inicio estilo del sectionMain*/
+
+.sectionMain{
+  display: flex;
+  justify-content: center;
+
+}
+/*Final estilo del sectionMain*/
+
+
+footer{
+  grid-area: footer;
+}
+
+footer section{
+  background-color: rgb(156, 137, 137);
+  text-align: center;
+
+}
+
+
+footer section a{
+background-color: rgb(7, 50, 78)  ;
+margin-left: 20px;
+
+color: white;
+border-radius: 50px;
+padding: 10px 20px 10px 20px;
+text-decoration: none;
+}
+
+footer h6{
+  text-align: left;
+}
+
+/***********************************************************************************************************************/
+/*                                   Tamaños inferiores a 320                                                                      */
+/***********************************************************************************************************************/
+
+
+/*-----------------------------PRINCIPAL----------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------------------------------------*/
+
+/*Media queries para PRINCIPAL*/
+@media screen and (max-width: 320px) {
+
+
+
+  body{
+    background-color: #D6DAD0;
+    
+   
+  }
+
+   
+  .headerH1Principal{
+    text-align: center;
+  
+    background-color: rgb(65, 65, 65);
+    color: white;
+    font-size: 12px;
+    
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  /*Inicio estilos del menu*/
+  .headerH1PrincipalNavUl{
+    align-content: center   ;
+    justify-content: center;
+  
+    list-style-position: center;  
+    list-style: none;
+    background-color: rgb(25, 59, 78);
+    padding: 5PX 5Px;
+    
+  }
+  
+   
+  /*Fin estilos del menu*/
+  
+  
+ /*Inicio estilo del divMain*/
+
+ .mainPrincipal{
+  display: flex;
+  margin-top: auto;
+
+  
+   margin-top: 0px;
+   background-color: red;
+   
+ }
+ .divMainPrincipal{
+  
+
+  display: flex;
+  align-items: center; 
+  width: 0 px ;
+  height: 0px;
+  color: black;
+  border-color: black;
+  margin: 0;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  padding: 0px 0px;
+  border-radius: 0px;
+
+}
+
+ main img{
+   display: none;
+ }
+
+  
+  .divMainSectionPrincipal{
+    background-color: rgb(193, 193, 209);
+    text-align: left;
+    margin-top: 250px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 10px;
+    padding-right: 0px;
+    border-radius: 0px;
+    font-size: 10px; 
+   
+  }
+  
+  .divMainUlPrincipal{
+    align-content: center;
+ 
+ 
+  }
+
+
+  .imgNone{
+    display: none;
+  }    
+  
+  
+  
+  
+  footer{
+    grid-area: footer;
+   
+  }
+  
+  .footerSection{
+    
+    list-style-position: center;  
+    list-style: none;
+    background-color: rgb(25, 59, 78);
+    padding: 5PX 5Px;
+    background-color: transparent;
+    text-align: center;
+    font-size: 10px;
+    margin-top: 150px;
+    padding: 0px 0px 0px 0px;
+  
+  }
+  
+  
+  .footerSectionUl{
+  background-color: rgb(25, 59, 78)  ;
+  
+  color: rgb(243, 243, 243);
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 10px;
+  margin-left: 0px;
+  margin-top: 100px;
+  }
+  
+  footer h6{
+    display: none;
+
+  }
+
+  /*-----------------------------NOSOTROS----------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------------------------------------*/
+
+
+  .headerH1Nosotros{
+    text-align: center;
+  
+    background-color: rgb(65, 65, 65);
+    color: white;
+    font-size: 12px;
+    
+  }
+  
+  
+  
+   
+  
+  
+  /*Inicio estilos del menu*/
+  .headerH1NosotrosNavUl{
+    align-content: center   ;
+    justify-content: center;
+    list-style-position: center;  
+    list-style: none;
+    background-color: rgb(25, 59, 78);
+    color: white;
+    padding: 5PX 5Px;
+    
+  }
+  
+   
+  /*Fin estilos del menu*/
+  
+  
+ /*Inicio estilo del divMain*/
+
+ .mainNosotros{
+  background-color: rgb(100, 4, 4);
+   
+ }
+ .mainH3Nosotros{
+   font-size: 12px;
+   align-content: center;
+   justify-content: center;
+   margin-top: 20px;
+   margin-left: 10px;
+ }
+
+
+  
+  .divMainSectionNosotros{
+    text-align: left;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 0px;
+    padding-left: 10px;
+    padding-right: 0px;
+    border-radius: 0px;
+    font-size: 10px; 
+   
+  }
+  
+   
+  
+  footer{
+    grid-area: footer;
+   
+  }
+
+  
+  
+
+ 
+
+  
+}
+
+
+/***********************************************************************************************************************/
+/*                                   Tamaños entre 320 y 768                                                                   */
+/***********************************************************************************************************************/
+
+/*-----------------------------PRINCIPAL----------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------------------------------------*/
+
+
+@media screen and (max-width: 768px) and (min-width: 320px) {
+
+
+
+  *{
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  body{
+    background-color: #D6DAD0;
+    
+   
+  }
+
+  header{
+    margin-left: 0px;
+  }
+
+ 
+  .headerH1Principal{
+    text-align: center;
+  
+    background-color: rgb(65, 65, 65);
+    color: white;
+    font-size: 50px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+    
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  /*Inicio estilos del menu*/
+  .headerH1PrincipalNavUl{
+    align-content: center   ;
+    justify-content: center;
+  
+    list-style-position: center;  
+    list-style: none;
+    background-color: rgb(25, 59, 78);
+    
+    
+  }
+  
+  
+  
+  /*Fin estilos del menu*/
+  
+  
+ /*Inicio estilo del divMain*/
+
+ .mainPrincipal{
+  display: flex;
+   
+ }
+ .divMainPrincipal{
+  
+
+  display: flex;
+  align-items: center; 
+  width: 0 px ;
+  height: 0px;
+  color: black;
+  border-color: black;
+  margin: 0;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  
+    border-radius: 0px;
+
+}
+
+ main img{
+   display: none;
+ }
+
+  
+ .divMainSectionPrincipal{
+    background-color: rgb(193, 193, 209);
+    text-align: left;
+    margin-top: 250px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 400px;
+    padding-left: 20px;
+  padding-right: 20px;
+  height: 250px;
+  width: 720px; 
+  
+    border-radius: 0px;
+    font-size: 30px; 
+   
+  }
+  
+  .divMainUlPrincipal{
+    align-content: center;
+ 
+ 
+  }
+
+
+  .imgNone{
+    display: none;
+  }    
+  
+  
+  
+  
+  footer{
+    grid-area: footer;
+   
+  }
+  
+  .footerSection{
+    
+    list-style-position: center;  
+    list-style: none;
+    padding: 5PX 5Px;
+    background-color: transparent;
+    text-align: center;
+    margin-top: 300px;
+    padding: 0px 0px 0px 0px;
+  
+  }
+  
+  
+  .footerSectionUl{
+  background-color: rgb(7, 50, 78)  ;
+  
+  color: white;
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 20px;
+  margin-left: 0px;
+  margin-top: 250px;
+  }
+  
+  footer h6{
+    display: none;
+
+  }
+
+
+  /*-----------------------------NOSOTROS----------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+
+   
+  .headerH1Nosotros{
+    text-align: center;
+  
+    background-color: rgb(65, 65, 65);
+    color: white;
+    font-size: 15px;
+    
+  }
+  
+  
+  
+   
+  
+  
+  /*Inicio estilos del menu*/
+  .headerH1NosotrosNavUl{
+    align-content: center   ;
+    justify-content: center;
+    list-style-position: center;  
+    list-style: none;
+    background-color: rgb(25, 59, 78);
+    color: white;
+    padding: 5PX 5Px;
+    
+  }
+  
+   
+  /*Fin estilos del menu*/
+  
+  
+ /*Inicio estilo del divMain*/
+
+ .mainNosotros{
+  background-color: rgb(100, 4, 4);
+   
+ }
+ .mainH3Nosotros{
+   font-size: 15px;
+   align-content: center;
+   justify-content: center;
+   margin-top: 20px;
+   margin-left: 10px;
+ }
+
+
+  
+  .divMainSectionNosotros{
+    text-align: left;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 0px;
+    padding-left: 10px;
+    padding-right: 0px;
+    border-radius: 0px;
+    font-size: 12px; 
+   
+  }
+  
+   
+  
+  footer{
+    grid-area: footer;
+   
+  }
+
+  
+
+  
+}
+
+
+
+/***********************************************************************************************************************/
+/*                                   Tamaños superiores a 768                                                                  */
+/***********************************************************************************************************************/
+
+
+/*-----------------------------NOSOTROS----------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------------------------------------*/
+
+@media screen and (min-width: 768px) {
+
+  .headerH1Nosotros{
+    text-align: center;
+  
+    background-color: rgb(65, 65, 65);
+    color: white;
+    font-size: 20px;
+    
+  }
+  
+  
+  
+   
+  
+  
+  /*Inicio estilos del menu*/
+  .headerH1NosotrosNavUl{
+    align-content: center   ;
+    justify-content: center;
+    list-style-position: center;  
+    list-style: none;
+    background-color: rgb(25, 59, 78);
+    color: white;
+    padding: 5PX 5Px;
+    
+  }
+  
+   
+  /*Fin estilos del menu*/
+  
+  
+ /*Inicio estilo del divMain*/
+
+ .mainNosotros{
+  background-color: rgb(100, 4, 4);
+   
+ }
+ .mainH3Nosotros{
+   font-size: 20px;
+   align-content: center;
+   justify-content: center;
+   margin-top: 20px;
+   margin-left: 10px;
+ }
+
+
+  
+  .divMainSectionNosotros{
+    text-align: left;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 0px;
+    padding-left: 10px;
+    padding-right: 0px;
+    border-radius: 0px;
+    font-size: 15px; 
+   
+  }
+  
+   
+  
+  footer{
+    grid-area: footer;
+   
+  }
+
+  
+
+  
+}
+
+
+
+
+
+
+  
