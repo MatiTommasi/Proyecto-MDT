@@ -11,6 +11,8 @@ body{
   background-color: #D6DAD0
 }
 
+
+
 /*propiedades padre (grid layout)*/
 .contenedor {
 
@@ -131,6 +133,41 @@ padding: 10px 40px;
 }
 /*Final estilo del sectionMain*/
 
+.padre{
+  display: flex;
+}
+
+
+.cajita{
+  width: 150px;
+  height: 150px;
+  background-color: black;
+  margin: 30px;
+}
+
+.uno{
+  border: 3px solid green;
+  color: white;
+}
+
+.dos{
+  border: 3px solid red;
+  color: white;
+}
+
+.uno:hover{
+  background-color: red;
+  transform: translate(20px, 50px);
+  transform: rotate(80deg)
+
+}
+
+.dos:hover{
+  background-color: green;
+  transform: translate(20px, 50px);
+  transform: rotate(80deg)
+
+}
 
 footer{
   grid-area: footer;
